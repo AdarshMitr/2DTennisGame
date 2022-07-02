@@ -119,9 +119,9 @@ function drawNet(){
     function drawEverything(){
       //next line blanks out the screen with black
       colorRect(0,0,canvas.width,canvas.height,'black');
-
+      canvasContext.font='60px san-serif';
       if(showingWinScreen){
-        
+       
         
         if(player1Score>=winningScore){
             canvasContext.font='60px san-serif';
@@ -132,7 +132,6 @@ function drawNet(){
 
         }else if(player2Score>=winningScore){
             canvasContext.fillStyle='red';
-            canvasContext.font='60px san-serif';
             canvasContext.textAlign='center';
           canvasContext.fillText('You lose! Try Again.',350,200);
           
